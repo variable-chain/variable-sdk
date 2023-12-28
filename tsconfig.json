@@ -1,0 +1,19 @@
+{
+  "compilerOptions": {
+    "target": "es2016",
+    "module": "commonjs",
+    "allowJs": true,
+    "esModuleInterop": true,
+    "outDir": "dist",
+    "rootDir": "./",
+    "strict": true,
+    "preserveSymlinks": true,
+    "resolveJsonModule": true
+  },
+  "exclude": [
+    "node_modules",
+    "scripts",
+    "test",
+    "dist",
+  ]
+}

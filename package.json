@@ -1,0 +1,16 @@
+{
+  "name": "variable-sdk",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "tsc": "tsc",
+    "build": "rimraf dist/ && yarn tsc -b"
+  },  
+  "repository": "git@github.com:variable-exchange/variable-sdk.git",
+  "author": "Variable",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^20.10.5",
+    "typescript": "^5.3.3"
+  }
+}
