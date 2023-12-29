@@ -1,17 +1,19 @@
 {
   "name": "variable-sdk",
-  "version": "1.0.2",
-  "main": "dist/src/index.js",
-  "type":"module",
+  "version": "1.0.4",
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
   "scripts": {
-    "tsc": "tsc",
-    "build": "rimraf dist/ && yarn tsc -b"
-  },  
+    "tsup": "tsup",
+    "build": "rimraf dist/ && yarn tsup"
+  },
   "repository": "git@github.com:variable-exchange/variable-sdk.git",
   "author": "Variable",
   "license": "MIT",
   "devDependencies": {
     "@types/node": "^20.10.5",
-    "typescript": "^5.3.3"
+    "typescript": "^5.3.3",
+    "tsup": "^8.0.1"
   }
 }
