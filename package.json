@@ -1,7 +1,8 @@
 {
   "name": "variable-sdk",
-  "version": "1.0.0",
-  "main": "dist/index.js",
+  "version": "1.0.2",
+  "main": "dist/src/index.js",
+  "type":"module",
   "scripts": {
     "tsc": "tsc",
     "build": "rimraf dist/ && yarn tsc -b"
