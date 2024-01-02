@@ -1,5 +1,5 @@
 module.exports = {
-    testEnvironment: 'node', // or 'jsdom' for browser environment
-    testRegex: '(/__tests__/.*|(\\.|/)(test|spec))\\.jsx?$',
-  };
-  
+  preset: 'ts-jest',
+  testEnvironment: 'node', // or 'jsdom' for browser environment
+  testMatch: ['**/__tests__/**/*.ts?(x)', '**/?(*.)+(spec|test).ts?(x)'],
+};
