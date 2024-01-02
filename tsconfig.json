@@ -1,19 +1,23 @@
 {
   "compilerOptions": {
-    "target": "es2016",
-    "module": "commonjs",
+    "target": "ES2022",
+    "module": "Commonjs",
     "allowJs": true,
     "esModuleInterop": true,
-    "outDir": "dist",
+    "outDir": "./dist",
+    "moduleResolution": "node",
     "rootDir": "./",
     "strict": true,
     "preserveSymlinks": true,
-    "resolveJsonModule": true
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "react",
+    "types": ["jest"]
   },
+  "include":["src"],
   "exclude": [
     "node_modules",
     "scripts",
-    "test",
-    "dist",
+    "test"
   ]
 }

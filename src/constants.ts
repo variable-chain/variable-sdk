@@ -1,0 +1,1 @@
+export const networkId: number = 123; 

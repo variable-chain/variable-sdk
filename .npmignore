@@ -1,0 +1,8 @@
+# source code
+/src
+
+# Dependency directories
+/node_modules
+
+tsconfig.json
+tsup.config.ts

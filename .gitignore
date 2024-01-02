@@ -1,6 +1,7 @@
 # build output
-dist
+/dist
 
 # Dependency directories
-node_modules/
+/node_modules
 
+/*.tgz
