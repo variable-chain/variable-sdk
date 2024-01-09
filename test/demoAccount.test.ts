@@ -1,4 +1,4 @@
-import { DemoAccounts } from './demoAccount';
+import { DemoAccounts } from '../src/accounts/demoAccount';
 
 describe('DemoAccounts', () => {
   it('should print "Hello, World!" and network Id to console', () => {
