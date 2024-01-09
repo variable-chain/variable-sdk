@@ -35,6 +35,7 @@ describe('NetworkDataHandler', () => {
     expect(handler.getConfig().chainId).toBe(1444);
   });
 
+// TODO : Add testcase after functionality for relative path is implemented
 //   it('should create an instance with file location', () => {
 //     const handler = new NetworkDataHandler('./path/to/config.json');
 //     expect(handler.getConfig().name).toBe('zkevmTestnet');
