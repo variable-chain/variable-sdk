@@ -1,4 +1,5 @@
 import { ethers } from "ethers";
+import { gasLimitValue, gasPriceValue } from "../constants";
 
 export class TransactionRequest {
   to: string;
@@ -11,8 +12,8 @@ export class TransactionRequest {
   constructor(
     to: string,
     value: ethers.BigNumber,
-    gasLimit: ethers.BigNumber = ethers.BigNumber.from(21000),
-    gasPrice: ethers.BigNumber = ethers.utils.parseUnits("20", "gwei"),
+    gasLimit: ethers.BigNumber = gasLimitValue,
+    gasPrice: ethers.BigNumber = gasPriceValue,
     nonce: number = 0,
     data: string = "0x"
   ) {
@@ -24,7 +25,7 @@ export class TransactionRequest {
     this.data = data;
   }
 
-  static createTransactionRequestObject(
+  public createTransactionRequestObject(
     to: string,
     value: ethers.BigNumber,
     options: Partial<TransactionRequest> = {}
