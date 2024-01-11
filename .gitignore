@@ -6,3 +6,6 @@
 
 # Tarball files 
 /*.tgz
+
+#Error files
+yarn-error.log
