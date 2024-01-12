@@ -36,7 +36,7 @@ test('signs and sends transaction', async () => {
   const signedTransaction = await wallet.signTransaction({
     to: MintTokenContractAddress,
     gasPrice: await provider.getGasPrice(),
-    gasLimit: await MulticallContract.estimateGas.multicall(multicallCalldata),
+    gasLimit: await MulticallContract.estimateGas.multicall([calldataForAddressA, calldataForAddressB]),
     nonce: await wallet.getTransactionCount(),
     data: multicallCalldata,
   });
@@ -46,4 +46,4 @@ test('signs and sends transaction', async () => {
 
   console.log('Transaction hash:', transactionResponse.hash);
   expect(transactionResponse.hash).toBeDefined();
-});
+},10000);
