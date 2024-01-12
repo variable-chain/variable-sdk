@@ -1,7 +1,5 @@
 {
-  "_format": "hh-sol-artifact-1",
   "contractName": "IMulticall",
-  "sourceName": "contracts/interfaces/IMulticall.sol",
   "abi": [
     {
       "inputs": [

@@ -21,6 +21,7 @@
     "typescript": "^5.3.3"
   },
   "dependencies": {
-    "@ethersproject/abi": "^5.7.0"
+    "@ethersproject/abi": "^5.7.0",
+    "ethers": "5.7"
   }
 }
