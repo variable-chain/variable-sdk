@@ -1,6 +1,6 @@
 import { NetworkConfig } from "../types";
 import { Configs } from "./config"
-
+import path from 'path';
 
 
 export class NetworkDataHandler {
@@ -34,12 +34,16 @@ export class NetworkDataHandler {
         return Configs.find(config => config.name === name);
     }
 
-    private getConfigByLocation(filename: string) {
-        // file path: this throws a warning during build - that's ok, it just won't work in react apps
-        // eslint-disable-next-line
-        let configFile = require(filename) as NetworkConfig;
-        return configFile;
-      }
+    private getConfigByLocation(filename: string): NetworkConfig {
+      // Construct the absolute path to the file using __dirname
+      const absolutePath = path.resolve(__dirname, filename);
+    
+      // Load the file based on the absolute path
+      // eslint-disable-next-line
+      const configFile = require(absolutePath) as NetworkConfig;
+    
+      return configFile;
+    }
 
     getConfig(): NetworkConfig {
         if (this.config == undefined) throw Error(`No SDK config found `);
